@@ -11,8 +11,8 @@ body{
 @keyframes colorchange
     {
       0%    {background: rgb(47, 148, 231, 0.9)}
-      25%   {background: rgb(247, 52, 117, 0.9);}
-      50%   {background: rgb(182, 73, 255, 0.9);}
+      25%   {background: rgb(182, 73, 255, 0.9);}
+      50%   {background: rgb(247, 52, 117, 0.9);}
       75%   {background: rgb(46, 185, 127, 0.9);}
       100%  {background: rgb(47, 148, 231, 0.9);}
     }
