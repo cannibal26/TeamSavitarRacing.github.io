@@ -1,18 +1,19 @@
 *{
     font-family: fantasy;
+    scroll-behavior: smooth ;
 }
 body{
     /*background-image: url("BG.jpg");*/
     background-size: cover;
-    animation: colorchange 60s;
+    animation: colorchange 30s;
     animation-iteration-count: infinite;
+    z-index: -1;
 }
 @keyframes colorchange
     {
       0%    {background: rgb(47, 148, 231)}
-      25%   {background: rgb(182, 73, 255);}
-      50%   {background: rgb(247, 52, 117);}
-      75%   {background: rgb(46, 185, 127);}
+      33%   {background: rgb(182, 73, 255);}
+      66%   {background: rgb(247, 52, 117);}
       100%  {background: rgb(47, 148, 231);}
     }
 /*.color-overlay{
@@ -23,14 +24,17 @@ body{
     position: absolute;
     justify-content: center;
     align-items: center;
+    z-index: 0;
 }*/
 .head
 {
     font-size: 10em;
     color: aliceblue;
-    margin: 150px 40px;
+    margin: 80px 50px;
     animation: fadeInLeft 3s ease-out;
     animation-iteration-count: initial;
+    z-index: 100;
+    transition: ease-out 1s;
 }
 @keyframes fadeInLeft {
     from {
@@ -42,15 +46,36 @@ body{
       transform: translate3d(0, 0, 0);
     }
   }
+.head:hover {
+    font-size: 11em;
+    transition: ease-out 0.5s;
+    color: aliceblue;
+    margin: 60px 50px;
+    z-index: 100;
+}
 .navbar
 {
+    transition: ease-out 1s;
     opacity: 30%;
+    z-index: 1;
 }
 .navbar:hover
 {
+    transition: ease-out 0.5s;
     opacity: 85%;
+    z-index: 1;
 }
 .jumbotron{
-    background-color: rgb(235, 245, 253, 0.5);
+    background-color: rgb(235, 245, 253, 0.3);
+    z-index: 1;
+    scale: 99%;
+    transition: ease-out 1s;
+}
+.jumbotron:hover
+{
+    background-color: rgb(235, 245, 253, 0.3);
+    z-index: 1;
+    scale: 100%;
+    transition: ease-out 0.5s;
 }
 
