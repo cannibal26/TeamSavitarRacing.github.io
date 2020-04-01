@@ -2,11 +2,10 @@
     font-family: fantasy;
 }
 body{
-
+    /*background-image: url("BG.jpg");*/
     background-size: cover;
     animation: colorchange 60s;
     animation-iteration-count: infinite;
-    background-image: url("BG.jpg");
 }
 @keyframes colorchange
     {
