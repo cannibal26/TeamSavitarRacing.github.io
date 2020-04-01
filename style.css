@@ -2,10 +2,20 @@
     font-family: fantasy;
 }
 body{
-    background-image: url("BG.jpg");
+
     background-size: cover;
-    background-color: #55a4ff;
+    animation: colorchange 60s;
+    animation-iteration-count: infinite;
+    background-image: url("BG.jpg");
 }
+@keyframes colorchange
+    {
+      0%    {background: rgb(47, 148, 231, 0.9)}
+      25%   {background: rgb(247, 52, 117, 0.9);}
+      50%   {background: rgb(182, 73, 255, 0.9);}
+      75%   {background: rgb(46, 185, 127, 0.9);}
+      100%  {background: rgb(47, 148, 231, 0.9);}
+    }
 /*.color-overlay{
     height: 100%;
     width: 100%;
