@@ -25,7 +25,7 @@
         background-color: #bf1736;
         margin: 5px;
         color: white;
-        transition: ease-out;
+        transition: ease-out 0.1 s;
 }
 .nav-link{
     color: white;
