@@ -25,6 +25,7 @@
         background-color: #bf1736;
         margin: 5px;
         color: white;
+        transition: ease-out;
 }
 .nav-link{
     color: white;
