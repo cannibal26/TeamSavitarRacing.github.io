@@ -9,16 +9,24 @@
     background-position: left;
     background-image: url(BG.png);
 }
-.nav-item{
-    color: white;
-    font-size: 7pt;
-    padding: 1px;
-    border: 2px red;
-    display: flex;
-    align-items: flex-end;
+.nav{
+    justify-content: right;
 }
 #titlepic{
     height: 750px;
-    padding: 20px;
-    border: 2px red;
+    padding: 19px;
+}
+.nav-item{
+    border: 1px solid #bf1736;
+    margin: 5px;
+}
+.nav-item:hover {
+        border: 1px solid #bf1736;
+        background-color: #bf1736;
+        margin: 5px;
+        color: white;
+}
+.nav-link{
+    color: white;
+    font-size: 12px;
 }
