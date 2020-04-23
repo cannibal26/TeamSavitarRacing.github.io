@@ -1,81 +1,24 @@
 *{
-    font-family: fantasy;
-    scroll-behavior: smooth ;
+    font-family: Century Gothic;
+    color: white;
+    font-size: 15pt;
 }
-body{
-    /*background-image: url("BG.jpg");*/
+#mainpage{
     background-size: cover;
-    animation: colorchange 30s;
-    animation-iteration-count: infinite;
-    z-index: -1;
+    background-color: #0e2773;
+    background-position: left;
+    background-image: url(BG.png);
 }
-@keyframes colorchange
-    {
-      0%    {background: rgb(47, 148, 231)}
-      33%   {background: rgb(182, 73, 255);}
-      66%   {background: rgb(247, 52, 117);}
-      100%  {background: rgb(47, 148, 231);}
-    }
-/*.color-overlay{
-    height: 100%;
-    width: 100%;
-    background: black;
-    opacity: 0.7;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    z-index: 0;
-}*/
-.head
-{
-    font-size: 10em;
-    color: aliceblue;
-    margin: 80px 50px;
-    animation: fadeInLeft 3s ease-out;
-    animation-iteration-count: initial;
-    z-index: 100;
-    transition: ease-out 1s;
+.nav-item{
+    color: white;
+    font-size: 7pt;
+    padding: 1px;
+    border: 2px red;
+    display: flex;
+    align-items: flex-end;
 }
-@keyframes fadeInLeft {
-    from {
-      opacity: 0;
-      transform: translate3d(-100%, 0, 0);
-    }
-    to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
-  }
-.head:hover {
-    font-size: 11em;
-    transition: ease-out 0.5s;
-    color: aliceblue;
-    margin: 60px 50px;
-    z-index: 100;
+#titlepic{
+    height: 750px;
+    padding: 20px;
+    border: 2px red;
 }
-.navbar
-{
-    transition: ease-out 1s;
-    opacity: 30%;
-    z-index: 1;
-}
-.navbar:hover
-{
-    transition: ease-out 0.5s;
-    opacity: 85%;
-    z-index: 1;
-}
-.jumbotron{
-    background-color: rgb(235, 245, 253, 0.3);
-    z-index: 1;
-    scale: 99%;
-    transition: ease-out 1s;
-}
-.jumbotron:hover
-{
-    background-color: rgb(235, 245, 253, 0.3);
-    z-index: 1;
-    scale: 100%;
-    transition: ease-out 0.5s;
-}
-
