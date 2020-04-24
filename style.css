@@ -2,19 +2,29 @@
     font-family: Century Gothic;
     color: white;
     font-size: 15pt;
+    box-sizing: border-box;
 }
+
 #mainpage{
     background-size: cover;
     background-color: #0e2773;
     background-position: left;
     background-image: url(BG.png);
+    max-width: 100%;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: auto;
 }
 .nav{
     justify-content: right;
 }
 #titlepic{
-    height: 750px;
+    height: auto;
     padding: 19px;
+    max-width: 100%;
+    width: auto;
+    background-size: contain;
 }
 .nav-item{
     border: 1px solid #bf1736;
